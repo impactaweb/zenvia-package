@@ -19,7 +19,7 @@ E depois indique o repositório, também no arquivo *composer.json*:
   }
 ]
 ```
-Por fim rode um *composer update* para carregar as alterações.
+Por fim rode um **composer update** para carregar as alterações.
 
 ### Configuração
 
@@ -41,3 +41,4 @@ E chame o método:
 ```
 return $zenvia->sendSms($numero, $texto);
 ```
+O número deve possuir tanto o DDI quanto o DDD. Ex.: 5527999999999.
