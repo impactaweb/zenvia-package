@@ -1,0 +1,22 @@
+{
+    "name": "fabioaov/zenvia",
+    "description": "Simple package for SMS sending with Zenvia API.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fábio Vieira",
+            "email": "fabioaov@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Fabioaov\\Zenvia\\": "src/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^3.3",
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}
