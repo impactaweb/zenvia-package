@@ -1,6 +1,6 @@
 ### Instalação
 
-Basta adicionar o pacote no require do arquivo *composer.json*:
+Adicione o pacote no require do arquivo *composer.json*:
 ```
 "require": {
   "php": "^7.2",
@@ -10,7 +10,7 @@ Basta adicionar o pacote no require do arquivo *composer.json*:
   "impactaweb/zenvia": "^0.0.2"
 },
 ```
-E depois indicar o repositório, também no arquivo *composer.json*:
+E depois indique o repositório, também no arquivo *composer.json*:
 ```
 "repositories": [
   {
@@ -19,11 +19,11 @@ E depois indicar o repositório, também no arquivo *composer.json*:
   }
 ]
 ```
-Por fim utilize o comando **composer update** para carregar as alterações.
+Por fim rode um *composer update* para carregar as alterações.
 
 ### Configuração
 
-Adicione as variáveis abaixo no arquivo *.env*:
+Adicione as seguintes variáveis no arquivo *.env*:
 ```
 ZENVIA_AUTH_TOKEN=
 ZENVIA_SENDER_NAME=
@@ -39,5 +39,5 @@ $zenvia = new SMS();
 ```
 E chame o método:
 ```
-return $zenvia->sendSms($numero, $texto;
+return $zenvia->sendSms($numero, $texto);
 ```
