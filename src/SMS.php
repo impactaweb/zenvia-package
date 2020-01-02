@@ -1,27 +1,27 @@
 <?php
 
-namespace Fabioaov\Zenvia;
+namespace Impactaweb\Zenvia;
 
 use GuzzleHttp\Client;
 
 class SMS
 {
     /**
-     * Function to send a SMS through Zenvia API with GuzzleHttp.
+     * Função que envia a requisição para a API do Zenvia através do GuzzleHttp.
      * 
-     * @param Int $phoneNumber
-     * @param String $text
+     * @param Int $numero
+     * @param String $texto
      * 
      * @return Array
      */
-    public function sendSms(Int $phoneNumber, String $text)
+    public function sendSms(Int $numero, String $texto)
     {
         $client = new Client();
 
         $sendSmsRequest = [
             "from" => $_ENV['ZENVIA_SENDER_NAME'],
-            "to" => $phoneNumber,
-            "msg" => $text
+            "to" => $numero,
+            "msg" => $texto
         ];
 
         try {

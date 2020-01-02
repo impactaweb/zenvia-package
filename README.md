@@ -1,30 +1,42 @@
-# Zenvia Package
+### Instalação
 
-This package was created in order to simplify the Zenvia API usage for those using it in multiple projects.
-
-### Installation (with Composer)
-
+Basta adicionar o pacote no require do arquivo *composer.json*:
 ```
-composer require fabioaov/zenvia
+"require": {
+  "php": "^7.2",
+  "fideloper/proxy": "^4.0",
+  "laravel/framework": "^6.2",
+  "laravel/tinker": "^2.0",
+  "impactaweb/zenvia": "^0.0.1"
+},
+```
+E depois indicar o repositório, também no arquivo *composer.json*:
+```
+"repositories": [
+  {
+    "type": "vcs",
+    "url": "https://github.com/impactaweb/zenvia"
+  }
+]
 ```
 
-### Setup
+### Configuração
 
-Add these variables to your *.env* file. Check out [PHP dotenv](https://github.com/vlucas/phpdotenv) if you don't have one.
+Adicione as variáveis abaixo no arquivo *.env*:
 ```
 ZENVIA_AUTH_TOKEN=
 ZENVIA_SENDER_NAME=
 ```
 
-### Usage
+### Como usar
 
-First create a SMS instance:
+Crie a instância:
 ```
-use Fabioaov\Zenvia\SMS;
+use Impactaweb\Zenvia\SMS;
 
 $zenvia = new SMS();
 ```
-And then call the method:
+E chame o método:
 ```
-return $zenvia->sendSms($phoneNumber, $text);
+return $zenvia->sendSms($numero, $texto;
 ```

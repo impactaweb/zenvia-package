@@ -1,18 +1,18 @@
 {
-    "name": "fabioaov/zenvia",
-    "description": "Simple package for SMS sending with Zenvia API.",
+    "name": "impactaweb/zenvia",
+    "description": "Pacote para facilitar o envio de SMS com a API do Zenvia.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Fábio Vieira",
-            "email": "fabioaov@outlook.com"
+            "email": "fabio@impactaweb.com.br"
         }
     ],
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Fabioaov\\Zenvia\\": "src/"
+            "Impactaweb\\Zenvia\\": "src/"
         }
     },
     "require": {
