@@ -7,7 +7,7 @@ Basta adicionar o pacote no require do arquivo *composer.json*:
   "fideloper/proxy": "^4.0",
   "laravel/framework": "^6.2",
   "laravel/tinker": "^2.0",
-  "impactaweb/zenvia": "^0.0.1"
+  "impactaweb/zenvia": "^0.0.2"
 },
 ```
 E depois indicar o repositório, também no arquivo *composer.json*:
@@ -19,6 +19,7 @@ E depois indicar o repositório, também no arquivo *composer.json*:
   }
 ]
 ```
+Por fim utilize o comando **composer update** para carregar as alterações.
 
 ### Configuração
 
