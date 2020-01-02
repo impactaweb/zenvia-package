@@ -15,7 +15,7 @@ E depois indicar o repositório, também no arquivo *composer.json*:
 "repositories": [
   {
     "type": "vcs",
-    "url": "https://github.com/impactaweb/zenvia"
+    "url": "https://github.com/impactaweb/zenvia-package"
   }
 ]
 ```
